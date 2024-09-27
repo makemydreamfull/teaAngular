@@ -1,0 +1,20 @@
+.popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.popup-title{
+  font-size: 25px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.btn{
+  width: 200px;
+}

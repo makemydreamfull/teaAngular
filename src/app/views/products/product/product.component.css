@@ -1,0 +1,22 @@
+.card-text{
+  max-width: 900px;
+}
+.but{
+  width: 900px;
+  gap: 10px;
+  bottom: 25px;
+}
+.card{
+  padding-bottom: 100px!important;
+  max-width: 900px;
+}
+.price{
+  top: -80px;
+  left: 10px;
+  height: 50px;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+}

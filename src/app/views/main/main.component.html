@@ -1,0 +1,94 @@
+<section class="section">
+  <div class="container p-0 pt-5 ">
+    <div class="carousel autoplay slick-one wow animate__backInDown mx-4 " id="carousel">
+      <div class="image">
+        <img src="../../../assets/images/Баннер1.png" class="img-fluid" alt="Рисунок1">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container p-0">
+  <h2 class=" text-center mt-5 mb-4">Ответы на часто задаваемые вопросы</h2>
+  <div id="accordion" class="d-flex flex-wrap justify-content-center">
+    <h3 class="p-2 rounded bg-primary text-white mb-3 w-75 d-flex align-items-center wow animate__backInLeft">
+      <div class="questions w-75 py-0">
+        <p class="py-2">Собираете ли вы подарочные боксы?</p></div>
+      <svg id="first" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+           class="bi bi-chevron-down position-absolute end-0 me-4" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </h3>
+    <div class="div w-75 py-0">
+      <p class="py-2 wow animate__backInLeft h-auto">
+        Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+      </p>
+    </div>
+    <h3 class="p-2 rounded bg-primary text-white mb-3 w-75 d-flex align-items-center wow animate__backInRight">
+      <div class="questions w-75 py-0">
+        <p class="py-2">
+          Сколько у вас разновидностей чая?
+        </p>
+      </div>
+      <svg id="second" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+           class="bi bi-chevron-up position-absolute end-0 me-4" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </h3>
+    <div class="div w-75 py-0">
+      <p class="py-2 h-auto">
+        У нас 6 разновидностей чая.
+      </p>
+    </div>
+    <h3 class="p-2 rounded bg-primary text-white mb-3 w-75 d-flex align-items-center wow animate__backInLeft">
+      <div class="questions w-75 py-0">
+        <p class="py-2">В какой срок осуществляется доставка?</p>
+      </div>
+      <svg id="third" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+           class="bi bi-chevron-up position-absolute end-0 me-4" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </h3>
+    <div class="div w-75 py-0">
+      <p class="py-2 h-auto">
+        В течение недели
+      </p>
+    </div>
+    <h3 class="p-2 rounded bg-primary text-white mb-3 w-75 d-flex align-items-center wow animate__backInRight">
+      <div class="questions w-75 py-0">
+        <p class="py-2">У вас обновляется ассортимент?</p>
+      </div>
+      <svg id="four" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+           class="bi bi-chevron-up position-absolute end-0 me-4" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </h3>
+    <div class="div w-75 py-0">
+      <p class="py-2 h-auto">
+        Да, каждые 3 месяца мы постоянно добавляем какую либо разновидность чая.
+      </p>
+    </div>
+    <h3 class="p-2 rounded bg-primary text-white mb-3 w-75 d-flex align-items-center wow animate__backInLeft">
+      <div class="questions w-75 py-0">
+        <p class="py-2">Какого объема у вас пачки чая?</p>
+      </div>
+      <svg id="fifth" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+           class="bi bi-chevron-up position-absolute end-0 me-4" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </h3>
+    <div class="div w-75 py-0">
+      <p class="py-2 h-auto">
+        Каждая пачка чая по 100 грамм
+      </p>
+    </div>
+  </div>
+  <div class="popup" *ngIf="loadingPopup">
+    <h2 class="popup-title mb-3">Посмотрите наши чайные коллекции!</h2>
+    <a class="btn btn-primary hvr-sweep-to-bottom" routerLink="/products">Смотреть</a>
+  </div>
+</section>

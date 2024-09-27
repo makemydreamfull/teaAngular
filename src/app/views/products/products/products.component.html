@@ -1,0 +1,27 @@
+<section class="collection p-0">
+  <div class="container-fluid p-0 justify-content-center">
+    <h1 class="text-center p-5">Наши чайные коллекции</h1>
+    <div class="container">
+      <div class="row w-100 flex-wrap justify-content-center ms-0">
+
+        <div class="card col-6 col-sm-4 position-relative bg-light border border-1 m-2 p-0 wow animate__backInLeft"
+             *ngFor="let product of products">
+          <img src="{{ product.image }}" alt="1" class="w-100 card-img-top test-popup-link first">
+          <div class="ps-3 pb-3 pt-3 card-body">
+            <h2 class="card-title">{{ product.title }}</h2>
+            <p class="card-text">{{ product.description | productsText}}</p>
+            <p class="price position-relative bottom-0">{{ product.price }} руб.</p>
+            <div class="but position-absolute">
+              <a class="btn w-75 btn-primary hvr-sweep-to-bottom" routerLink="/product/{{product.id}}">Подробнее</a>
+              <a class="btn w-75 btn-warning hvr-sweep-to-bottom" routerLink="/order"
+                 [queryParams]="{title: product.title}">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="loading" class="loader-bg">
+    <div class="loader"></div>
+  </div>
+</section>

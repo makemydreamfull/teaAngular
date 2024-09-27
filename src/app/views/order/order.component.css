@@ -1,0 +1,10 @@
+.no-important {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.text-danger {
+  font-size: 13px;
+}
+
